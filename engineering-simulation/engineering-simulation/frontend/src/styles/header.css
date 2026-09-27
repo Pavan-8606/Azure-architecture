@@ -1,0 +1,78 @@
+.sim-header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: var(--bg-app);
+  border-bottom: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.sim-header-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.sim-header-desc {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  margin: 0.15rem 0 0 0;
+}
+
+.sim-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sim-system-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.sim-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.sim-status-dot.online {
+  background-color: var(--status-online);
+  box-shadow: 0 0 6px var(--status-online);
+}
+
+.sim-status-dot.offline {
+  background-color: var(--status-offline);
+  box-shadow: 0 0 6px var(--status-offline);
+}
+
+.sim-status-text {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .sim-header {
+    padding: 0 1rem;
+  }
+  .sim-header-desc {
+    display: none;
+  }
+  .sim-system-status {
+    padding: 0.3rem 0.5rem;
+  }
+  .sim-status-text {
+    display: none;
+  }
+}

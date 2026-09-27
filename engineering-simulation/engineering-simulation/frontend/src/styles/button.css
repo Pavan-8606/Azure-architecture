@@ -1,0 +1,71 @@
+.sim-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.sim-btn-sm {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.825rem;
+}
+
+.sim-btn-md {
+  padding: 0.6rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+.sim-btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Variants */
+.sim-btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.sim-btn-primary:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.sim-btn-secondary {
+  background-color: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: var(--border-muted);
+}
+
+.sim-btn-secondary:hover:not(:disabled) {
+  background-color: #27354a;
+  border-color: #3b4d6e;
+}
+
+.sim-btn-outline {
+  background-color: transparent;
+  color: var(--text-primary);
+  border-color: var(--border-muted);
+}
+
+.sim-btn-outline:hover:not(:disabled) {
+  background-color: var(--bg-card);
+  border-color: var(--border-focus);
+}
+
+.sim-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sim-btn-icon {
+  display: flex;
+  align-items: center;
+}

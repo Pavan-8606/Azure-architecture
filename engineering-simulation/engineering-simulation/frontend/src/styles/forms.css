@@ -1,0 +1,199 @@
+/* Dark form styling for SimFlow */
+
+.sim-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.75rem 2rem;
+}
+
+.sim-form-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sim-form-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sim-form-section-desc {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem 0;
+}
+
+.sim-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.sim-form-full {
+  grid-column: span 2;
+}
+
+.sim-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sim-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+}
+
+.sim-label-required {
+  color: var(--accent-cyan);
+}
+
+.sim-input,
+.sim-select,
+.sim-textarea {
+  background-color: var(--bg-app);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius);
+  color: var(--text-primary);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.sim-input:focus,
+.sim-select:focus,
+.sim-textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.sim-input.error,
+.sim-select.error,
+.sim-textarea.error {
+  border-color: var(--status-offline);
+}
+
+.sim-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.sim-error-msg {
+  font-size: 0.775rem;
+  color: var(--status-offline);
+  margin-top: 0.15rem;
+}
+
+.sim-help-text {
+  font-size: 0.775rem;
+  color: var(--text-tertiary);
+}
+
+/* Radio & Checkbox Groups */
+.sim-radio-group,
+.sim-checkbox-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0.25rem;
+}
+
+.sim-radio-label,
+.sim-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg-app);
+  border: 1px solid var(--border-subtle);
+  padding: 0.6rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.sim-radio-label:hover,
+.sim-checkbox-label:hover {
+  border-color: var(--border-muted);
+}
+
+.sim-radio-label.selected,
+.sim-checkbox-label.selected {
+  border-color: var(--primary);
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.sim-radio-input,
+.sim-checkbox-input {
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+/* Form Actions Area */
+.sim-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+/* Success Confirmation Banner */
+.sim-success-banner {
+  background-color: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  border-radius: var(--border-radius-lg);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.sim-success-icon {
+  font-size: 1.5rem;
+}
+
+.sim-success-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--status-online);
+  margin: 0 0 0.35rem 0;
+}
+
+.sim-success-content p {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .sim-form-container {
+    padding: 1rem;
+  }
+  .sim-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .sim-form-full {
+    grid-column: span 1;
+  }
+}

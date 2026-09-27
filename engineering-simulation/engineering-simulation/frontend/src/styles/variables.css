@@ -1,0 +1,37 @@
+:root {
+  /* Color Palette - Cloud & Engineering Aesthetic */
+  --bg-app: #0b0f19;
+  --bg-sidebar: #111827;
+  --bg-card: #161e2e;
+  --bg-card-hover: #1e293b;
+  --bg-input: #1e293b;
+
+  --border-subtle: #1f293d;
+  --border-muted: #2d3b55;
+  --border-focus: #3b82f6;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-tertiary: #64748b;
+
+  /* Accent Colors */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --accent-cyan: #06b6d4;
+  
+  /* Status Colors */
+  --status-online: #10b981;
+  --status-offline: #ef4444;
+  --status-running: #3b82f6;
+  --status-warning: #f59e0b;
+
+  /* Typography */
+  --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Layout Spacing & Sizing */
+  --sidebar-width: 240px;
+  --header-height: 70px;
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+  --transition-fast: 0.15s ease;
+}
